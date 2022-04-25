@@ -152,10 +152,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.portal, function (sprite, otherS
     mySprite5 = sprites.create(assets.image`nether portal`, SpriteKind.wall)
     scaling.scaleByPixels(mySprite5, 10, ScaleDirection.Vertically, ScaleAnchor.Middle)
     scaling.scaleByPixels(mySprite5, 10, ScaleDirection.Horizontally, ScaleAnchor.Middle)
+    mySprite5.setPosition(145, 79)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.wall, function (sprite, otherSprite) {
     game.over(true)
-    mySprite5.setPosition(145, 79)
 })
 let mySprite5: Sprite = null
 let mySprite4: Sprite = null
