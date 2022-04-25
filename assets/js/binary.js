@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.0","target":"arcade","targetVersion":"1.8.22"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.1","target":"arcade","targetVersion":"1.8.22","repo":"yeppoip/the-easiest-game-ever"}
 // total=1542936 new=7.65% cached=87.22% other=5.13%
 (function (ectx) {
 'use strict';
@@ -469,7 +469,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P20419(s) {
+function _main___P20511(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -872,13 +872,13 @@ switch (step) {
     s.tmp_0.arg0 = globals.Player___2259;
     s.tmp_0.arg1 = globals.portal___3929;
     s.tmp_0.arg2 = inline__P6440;
-    s.callLocIdx = 69; s.pc = 39; return s.tmp_0;
+    s.callLocIdx = 70; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P2237_mk(s);
     s.tmp_0.arg0 = globals.Player___2259;
     s.tmp_0.arg1 = globals.wall___3930;
-    s.tmp_0.arg2 = inline__P6481;
+    s.tmp_0.arg2 = inline__P6483;
     s.callLocIdx = 72; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
@@ -957,13 +957,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P20419.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P20419.continuations = [  ]
+_main___P20511.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P20511.continuations = [  ]
 
-function _main___P20419_mk(s) {
+function _main___P20511_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P20419, depth: s.depth + 1,
+        parent: s, fn: _main___P20511, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1516,11 +1516,18 @@ switch (step) {
     s.callLocIdx = 68; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
+    s.tmp_0 = Sprite_setPosition__P2196_mk(s);
+    s.tmp_0.arg0 = globals.mySprite5___3931;
+    s.tmp_0.arg1 = 145;
+    s.tmp_0.arg2 = 79;
+    s.callLocIdx = 69; s.pc = 9; return s.tmp_0;
+  case 9:
+    r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6440.info = {"start":330,"length":21515,"line":8,"column":56,"endLine":154,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P6440.info = {"start":330,"length":21550,"line":8,"column":56,"endLine":155,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
 function inline__P6440_mk(s) {
     checkStack(s.depth);
@@ -1539,7 +1546,7 @@ const _hex6450 = pxsim.BufferMethods.createBufferFromHex("8704100010000000000000
 
 
 
-function inline__P6481(s) {
+function inline__P6483(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1557,26 +1564,19 @@ switch (step) {
     s.tmp_0 = game_over__P2695_mk(s);
     s.tmp_0.arg0 = true;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 70; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 71; s.pc = 1; return s.tmp_0;
   case 1:
-    r0 = s.retval;
-    s.tmp_0 = Sprite_setPosition__P2196_mk(s);
-    s.tmp_0.arg0 = globals.mySprite5___3931;
-    s.tmp_0.arg1 = 145;
-    s.tmp_0.arg2 = 79;
-    s.callLocIdx = 71; s.pc = 2; return s.tmp_0;
-  case 2:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6481.info = {"start":21901,"length":89,"line":155,"column":54,"endLine":158,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P6483.info = {"start":21936,"length":54,"line":156,"column":54,"endLine":158,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P6481_mk(s) {
+function inline__P6483_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6481, depth: s.depth + 1,
+        parent: s, fn: inline__P6483, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -51230,5 +51230,5 @@ const sprites_BaseSpriteSayRenderer__C2048_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___3937","object___3928","portal___3929","wall___3930","mySprite4___3932","mySprite5___3931","mySprite___3933","mySprite2___3934","mySprite3___3935"])
 
-return _main___P20419
+return _main___P20511
 })
