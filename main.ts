@@ -366,7 +366,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
         ........................................
         `],
     500,
-    false
+    true
     )
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.thing, function (sprite, otherSprite) {
