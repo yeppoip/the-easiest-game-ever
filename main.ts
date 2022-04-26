@@ -318,6 +318,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.wall, function (sprite, otherSpr
         ......ffccccbbbbbbbbbbbbff......
         ........ffffffffffffffff........
         `, SpriteKind.thing)
+    mySprite6.setPosition(14, 93)
 })
 let mySprite6: Sprite = null
 let mySprite5: Sprite = null
