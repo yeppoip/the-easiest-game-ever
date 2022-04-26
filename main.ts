@@ -532,6 +532,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.wall, function (sprite, otherSpr
         ........ffffffffffffffff........
         `, SpriteKind.thing)
     mySprite6.setPosition(14, 93)
+    scaling.scaleToPixels(mySprite5, 32, ScaleDirection.Horizontally, ScaleAnchor.Middle)
+    scaling.scaleToPixels(mySprite5, 32, ScaleDirection.Vertically, ScaleAnchor.Middle)
 })
 let mySprite6: Sprite = null
 let mySprite5: Sprite = null
